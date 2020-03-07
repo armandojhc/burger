@@ -8,6 +8,7 @@ let connection = mysql.createConnection({
   database: "burger_db"
 });
 
+
 // Make connection.
 connection.connect(err => {
   if (err) {
