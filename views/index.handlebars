@@ -1,11 +1,13 @@
-<h1>Burgers</h1>
+<h1>Lets eat burgers!!!</h1>
+
+<img src="/public/assets/burger-img.png" alt="burger">
 
 <h2>Burgers that have not been devoured</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-    {{!-- You can put all the code inside the cat-block.handlebars --}}
+    
       {{> burgers/burger-block devoured=false}}  
     {{/unless}}
   {{/each}}
