@@ -1,0 +1,35 @@
+<h1>Burgers</h1>
+
+<h2>Burgers that have not been devoured</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+    {{!-- You can put all the code inside the cat-block.handlebars --}}
+      {{> burgers/burger-block devoured=false}}  
+    {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Burgers devoured</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+        
+      {{> burgers/burger-block devoured=true}}
+
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button type="submit">Add Burger</button>
+</form>

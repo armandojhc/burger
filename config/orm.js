@@ -59,7 +59,7 @@ function objToSql(ob) {
 
 let orm = {
 
-    all: function(tableInput, cb) {
+    all: function(tableInput, cb) {// 
       let queryString = "SELECT * FROM " + tableInput + ";";
       connection.query(queryString, (err, result) => {
         if (err) {
