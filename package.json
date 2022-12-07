@@ -18,7 +18,7 @@
   "homepage": "https://github.com/armandojhc/burger#readme",
   "dependencies": {
     "config.json": "0.0.4",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-handlebars": "^3.1.0",
     "mysql": "^2.18.1"
   }
